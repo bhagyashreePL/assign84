@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'assign84';
+  textData = "";
+  public fun(event){
+   this.textData =((<HTMLInputElement>event.target).value);
+  }
 }
